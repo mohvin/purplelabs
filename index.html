@@ -382,6 +382,11 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#home" id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
     <!-- JavaScript for Popups -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -473,5 +478,29 @@
     </script>
     
     <script src="js/main.js"></script>
+    
+    <!-- Back to Top Button JavaScript -->
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        // Show button when user scrolls down 300px
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        // Smooth scroll to top when clicked
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
