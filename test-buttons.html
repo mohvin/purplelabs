@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+        
+        #home {
+            background-color: #f5f5f5;
+        }
+        
+        #services {
+            background-color: #e0e0e0;
+        }
+        
+        #contact {
+            background-color: #d0d0d0;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7c3aed;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section id="home">
+        <div>
+            <h1>Home Section</h1>
+            <a href="#services" class="button" id="services-btn">Go to Services</a>
+            <a href="#contact" class="button" id="contact-btn">Go to Contact</a>
+        </div>
+    </section>
+    
+    <section id="services">
+        <div>
+            <h1>Services Section</h1>
+            <a href="#home" class="button">Back to Home</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div>
+            <h1>Contact Section</h1>
+            <a href="#home" class="button">Back to Home</a>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('services-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('services').scrollIntoView({behavior: 'smooth'});
+        });
+        
+        document.getElementById('contact-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+        });
+    </script>
+</body>
+</html>

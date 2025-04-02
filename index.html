@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purplelabs - Innovative AI Solutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo-icon.svg" alt="purplelabs icon" width="40" height="40">
+                    <span class="logo-text">purplelabs</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#capabilities">Capabilities</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="btn-primary">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>AI-First solution for<br>Adaptive, Self Governing<br>Enterprises</h1>
+                <p>Enabling Intelligent Autonomy for Business Transformation.</p>
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('services')" class="btn-primary">Our Services</button>
+                    <button onclick="scrollToSection('contact')" class="btn-secondary">Get in Touch</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="images/hero-image.svg" alt="AI Innovation">
+                </div>
+            </div>
+        </div>
+        <div class="hero-pattern"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Cutting-edge AI solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI Consulting</h3>
+                        <p>Discover AI's practical advantage with custom solutions</p>
+                        <a href="#" class="service-link" data-popup="popup-consulting">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-gradient"></div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Generative AI</h3>
+                        <p>Adapt cutting-edge Generative AI to your business needs</p>
+                        <a href="#" class="service-link" data-popup="popup-generative">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-gradient"></div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>AI Development</h3>
+                        <p>Design, build and train AI systems tailored to your needs</p>
+                        <a href="#" class="service-link" data-popup="popup-development">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="service-gradient"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Popups -->
+    <div class="popup-overlay"></div>
+    
+    <!-- AI Consulting Popup -->
+    <div id="popup-consulting" class="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3><i class="fas fa-brain"></i> AI Consulting</h3>
+                <button class="popup-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="popup-body">
+                <h4>Strategic AI Integration for Your Business</h4>
+                <p>Our AI consulting services help businesses identify and implement the most impactful AI solutions for their specific needs. We work closely with your team to:</p>
+                <ul>
+                    <li>Assess your current technology infrastructure and identify opportunities for AI integration</li>
+                    <li>Develop a comprehensive AI strategy aligned with your business goals</li>
+                    <li>Create a roadmap for implementation with clear milestones and ROI metrics</li>
+                    <li>Provide expert guidance on data requirements, technology selection, and change management</li>
+                </ul>
+                <p>We bring deep expertise in machine learning, natural language processing, computer vision, and predictive analytics to help you navigate the complex AI landscape.</p>
+                <div class="popup-cta">
+                    <a href="#contact" class="btn-primary popup-close-btn">Contact Us for a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Generative AI Popup -->
+    <div id="popup-generative" class="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3><i class="fas fa-robot"></i> Generative AI</h3>
+                <button class="popup-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="popup-body">
+                <h4>Harness the Power of Generative AI</h4>
+                <p>Our Generative AI services help you leverage the latest advancements in AI to create new content, insights, and solutions. We specialize in:</p>
+                <ul>
+                    <li>Custom large language model (LLM) fine-tuning for your specific domain</li>
+                    <li>Development of AI assistants and chatbots tailored to your business processes</li>
+                    <li>Content generation systems for marketing, product descriptions, and creative work</li>
+                    <li>Multimodal AI solutions combining text, image, and audio capabilities</li>
+                </ul>
+                <p>We work with cutting-edge models and technologies while ensuring responsible AI implementation with proper governance and ethical considerations.</p>
+                <div class="popup-cta">
+                    <a href="#contact" class="btn-primary popup-close-btn">Discuss Your Generative AI Needs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- AI Development Popup -->
+    <div id="popup-development" class="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3><i class="fas fa-cogs"></i> AI Development</h3>
+                <button class="popup-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="popup-body">
+                <h4>Custom AI Solutions Built for Your Business</h4>
+                <p>Our AI development team creates bespoke AI systems designed to solve your specific business challenges. Our comprehensive development services include:</p>
+                <ul>
+                    <li>End-to-end AI solution development from concept to deployment</li>
+                    <li>Custom machine learning model development and training</li>
+                    <li>Integration of AI systems with your existing technology stack</li>
+                    <li>Ongoing maintenance, monitoring, and optimization of AI solutions</li>
+                </ul>
+                <p>We follow industry best practices for MLOps, ensuring your AI systems are reliable, scalable, and maintainable over time.</p>
+                <div class="popup-cta">
+                    <a href="#contact" class="btn-primary popup-close-btn">Start Your AI Development Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Capabilities Section -->
+    <section id="capabilities" class="capabilities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Capabilities</h2>
+                <p>Our comprehensive AI solutions to transform your business</p>
+            </div>
+            
+            <div class="capabilities-grid">
+                <!-- AI Consulting -->
+                <div class="capability-card">
+                    <div class="capability-header ai-consulting">
+                        <h3>AI Consulting</h3>
+                    </div>
+                    <div class="capability-content">
+                        <p>Create AI strategy with expert guidance, identify the most impactful AI opportunities for your business, and chart a clear path to AI implementation</p>
+                    </div>
+                </div>
+                
+                <!-- Gen AI Development -->
+                <div class="capability-card">
+                    <div class="capability-header gen-ai">
+                        <h3>Gen AI Development</h3>
+                    </div>
+                    <div class="capability-content">
+                        <p>Leverage our expertise to adapt cutting edge, general purpose Generative AI models into tailored solutions that address your unique business challenges</p>
+                    </div>
+                </div>
+                
+                <!-- AI Development -->
+                <div class="capability-card">
+                    <div class="capability-header ai-dev">
+                        <h3>AI Development</h3>
+                    </div>
+                    <div class="capability-content">
+                        <p>Elevate your business with customized AI solutions designed, developed, and deployed to fit your unique needs</p>
+                    </div>
+                </div>
+                
+                <!-- Data Engineering Services -->
+                <div class="capability-card">
+                    <div class="capability-header data-eng">
+                        <h3>Data Engineering Services</h3>
+                    </div>
+                    <div class="capability-content">
+                        <p>Transform raw data into actionable insights with robust data pipelines and infrastructure, enabling data-driven decision-making across your organization</p>
+                    </div>
+                </div>
+                
+                <!-- MLOps -->
+                <div class="capability-card">
+                    <div class="capability-header mlops">
+                        <h3>MLOps</h3>
+                    </div>
+                    <div class="capability-content">
+                        <p>Streamline your machine learning lifecycle, from development to deployment, ensuring faster time-to-market and reliable, scalable AI development solutions</p>
+                    </div>
+                </div>
+                
+                <!-- AI Assist -->
+                <div class="capability-card">
+                    <div class="capability-header ai-assist">
+                        <h3>AI Assist</h3>
+                    </div>
+                    <div class="capability-content">
+                        <p>Empower workforce with an intelligent AI assistant that breaks enhance knowledge management processes, enabling seamless information retrieval, semantic search, and automated summarization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Our Mission and Vision</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2022, purplelabs was born from a vision to make advanced AI accessible to businesses of all sizes. Our team of experts combines deep technical knowledge with business acumen to deliver solutions that drive real results.</p>
+                    <p>We believe in the transformative power of AI when applied thoughtfully and ethically. Our approach focuses on creating practical, scalable solutions that solve real business challenges.</p>
+                </div>
+                
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Our Mission</h4>
+                        <p>To democratize AI technology by making it accessible, understandable, and actionable for businesses of all sizes, enabling them to thrive in the digital age.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>Our Vision</h4>
+                        <p>To create a world where AI empowers organizations to make better decisions, automate routine tasks, and unlock new opportunities for growth and innovation.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Our Values</h4>
+                        <p>Integrity, innovation, collaboration, and excellence guide everything we do. We're committed to ethical AI development and transparent partnerships with our clients.</p>
+                    </div>
+                </div>
+                
+                <div class="about-cta">
+                    <h3>Ready to Transform Your Business?</h3>
+                    <p>Join the hundreds of organizations already leveraging our AI solutions to drive growth and efficiency.</p>
+                    <a href="#contact" class="btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Ready to transform your business with AI? Get in touch!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Innovation Drive<br>San Francisco, CA 94107</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@purplelabs.ai</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">purplelabs</a>
+                    <p>Empowering businesses through innovative AI solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#capabilities">Capabilities</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 purplelabs. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Popups -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all elements
+            const serviceLinks = document.querySelectorAll('.service-link[data-popup]');
+            const popupOverlay = document.querySelector('.popup-overlay');
+            const popups = document.querySelectorAll('.popup');
+            const closeButtons = document.querySelectorAll('.popup-close, .popup-close-btn');
+            
+            // Open popup when clicking on service link
+            serviceLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const popupId = this.getAttribute('data-popup');
+                    const popup = document.getElementById(popupId);
+                    
+                    // Show overlay and popup
+                    popupOverlay.classList.add('active');
+                    popup.style.display = 'block';
+                    
+                    // Add active class after a small delay for animation
+                    setTimeout(() => {
+                        popup.classList.add('active');
+                    }, 10);
+                    
+                    // Prevent scrolling on body
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            // Close popup function
+            function closePopup() {
+                popups.forEach(popup => {
+                    popup.classList.remove('active');
+                    
+                    // Hide popup after animation completes
+                    setTimeout(() => {
+                        popup.style.display = 'none';
+                    }, 300);
+                });
+                
+                popupOverlay.classList.remove('active');
+                
+                // Re-enable scrolling
+                document.body.style.overflow = '';
+            }
+            
+            // Close popup when clicking close button
+            closeButtons.forEach(button => {
+                button.addEventListener('click', closePopup);
+            });
+            
+            // Close popup when clicking overlay
+            popupOverlay.addEventListener('click', closePopup);
+            
+            // Close popup when pressing Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closePopup();
+                }
+            });
+            
+            // Prevent closing when clicking inside popup content
+            popups.forEach(popup => {
+                popup.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        // Direct function to handle hero button clicks
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const headerOffset = 80;
+                const elementPosition = section.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
